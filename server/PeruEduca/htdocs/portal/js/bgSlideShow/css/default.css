@@ -1,0 +1,297 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: 'fontawesome';
+	src:url('../fonts/fontawesome.eot');
+	src:url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/fontawesome.svg#fontawesome') format('svg'),
+		url('../fonts/fontawesome.woff') format('woff'),
+		url('../fonts/fontawesome.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaMdBTMedium';
+    src: url('../../../fonts/futura-regular/tt0142m_0.eot');
+    src: url('../../../fonts/futura-regular/tt0142m_0.eot') format('embedded-opentype'),
+         url('../../../fonts/futura-regular/tt0142m_0.woff') format('woff'),
+         url('../../../fonts/futura-regular/tt0142m_0.ttf') format('truetype'),
+         url('../../../fonts/futura-regular/tt0142m_0.svg#FuturaMdBTMedium') format('svg');
+}
+@font-face {
+    font-family: 'FuturaMdBTBold';
+    src: url('../../../fonts/futura-bold/tt0144m.eot');
+    src: url('../../../fonts/futura-bold/tt0144m.eot') format('embedded-opentype'),
+         url('../../../fonts/futura-bold/tt0144m.woff') format('woff'),
+         url('../../../fonts/futura-bold/tt0144m.ttf') format('truetype'),
+         url('../../../fonts/futura-bold/tt0144m.svg#FuturaMdBTBold') format('svg');
+}
+
+body, html { font-size: 100%; 	padding: 0; margin: 0;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+.main .container {
+	position: relative;
+}
+
+.main,
+.container > header {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0 1.875em 3.125em 1.875em;
+}
+
+.container > header {
+	padding: 2.875em 1.875em 1.875em;
+}
+
+.container > header h1 {
+	font-family:'FuturaMdBTBold', sans-serif;
+	font-size: 2.220em;
+	letter-spacing: .06em;
+	line-height: 1.3;
+	margin: 40px 0 0 0;
+
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+}
+
+.container > header span {
+	display: block;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	padding: 0 0 0.6em 0.1em;
+}
+
+.container > header nav {
+	float: right;
+}
+
+.container > header nav a {
+	display: block;
+	float: left;
+	position: relative;
+	width: 2.5em;
+	height: 2.5em;
+	background: #fff;
+	border-radius: 50%;
+	color: transparent;
+	margin: 0 0.1em;
+	border: 4px solid #47a3da;
+	text-indent: -8000px;
+}
+
+.container > header nav a:after {
+	content: attr(data-info);
+	color: #47a3da;
+	position: absolute;
+	width: 600%;
+	top: 120%;
+	text-align: right;
+	right: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.container > header nav a:hover:after {
+	opacity: 1;
+}
+
+.container > header nav a:hover {
+	background: #47a3da;
+}
+
+.icon-drop:before, 
+.icon-arrow-left:before {
+	font-family: 'fontawesome';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 2;
+	text-align: center;
+	color: #47a3da;
+	-webkit-font-smoothing: antialiased;
+	text-indent: 8000px;
+	padding-left: 8px;
+}
+
+.container > header nav a:hover:before {
+	color: #fff;
+}
+
+.icon-drop:before {
+	content: "\e000";
+}
+
+.icon-arrow-left:before {
+	content: "\f060";
+}
+
+.enlace-recursos {
+	border-radius: 10px;
+	box-shadow: 0 1px 3px rgba(15,15,15,0.10);
+	background: url(../../../img/pixel-60fff.png) repeat;
+	width: 420px;
+	min-height: 200px;
+	margin: 0 auto;
+}
+
+.enlace-recursos .contenido-enlace {
+	min-height: 250px;
+	padding: 30px 40px 30px 40px;
+}
+.enlace-recursos .contenido-enlace h4 {
+	font-family:'FuturaMdBTMedium', sans-serif;
+	color: #000;
+	margin: 0 0 30px 0;
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+}
+.enlace-recursos h1 {
+	font-family:'FuturaMdBTBold', sans-serif;
+	font-size: 2.120em;
+	letter-spacing: .06em;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 400;
+	text-align: center;
+	color: #fff;
+}
+.enlace-nivel-p {
+	letter-spacing: .3em;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: rgba(0, 160, 153, 1);
+	border-radius: 30px;
+	color: #fff;
+	display: block;
+	font-family: 'Proxima Nova',sans-serif;
+	height: auto;
+	line-height: 30px;
+	padding: 6px;
+	width: 100%;
+	margin: 15px auto;
+	-webkit-font-smoothing: antialiased;
+	border: 2px solid #fff;
+	text-align: center;
+	overflow: hidden;
+
+	transition:all .3s ease;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	-o-transition:all .3s ease;
+}
+.enlace-nivel-p:hover {
+	background: #666666;
+}
+
+.enlace-nivel {
+	letter-spacing: .3em;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: rgba(51, 189, 230, 1);
+	border-radius: 30px;
+	color: #fff;
+	display: block;
+	font-family: 'Proxima Nova',sans-serif;
+	height: auto;
+	line-height: 30px;
+	padding: 6px;
+	width: 100%;
+	margin: 15px auto;
+	-webkit-font-smoothing: antialiased;
+	border: 2px solid #fff;
+	text-align: center;
+	overflow: hidden;
+
+	transition:all .3s ease;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	-o-transition:all .3s ease;
+}
+.enlace-nivel:hover {
+	background: #666666;
+}
+
+.container > footer {
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1.875em 3.125em 1.875em;
+}
+
+.container > footer {
+	padding: 1.5em 1.875em 1.5em;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.container > footer .contenido-pie {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+
+}
+
+.container > footer .contenido-pie .logo-pie {
+	float: left;
+}
+
+.container > footer .contenido-pie .texto-pie {
+	font-family:'FuturaMdBTMedium', sans-serif;
+	float: right;
+	color: #fff;
+	font-size: 12px;
+	text-align: left;
+	/*padding-left: 15px;*/
+	line-height: 18px;
+}

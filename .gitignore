@@ -1,0 +1,15 @@
+videos/
+juegos/
+modulos/
+relatos/
+fasciculos/
+biografias/
+*.iso
+*.tar.gz
+server/PeruEduca/server/
+server/PeruEduca/dlls/
+server/PeruEduca/*.exe
+server/PeruEduca/*.dll
+server/PeruEduca/Desktop.ini
+server/PeruEduca/autorun.inf
+server/software_basicos_para windows/
