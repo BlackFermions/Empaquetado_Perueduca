@@ -10,3 +10,4 @@ RUN a2enconf perueduca
 COPY server/PeruEduca/htdocs/portal /var/www/html/
 
 COPY docker/web/config.php /var/www/html/libreria/config.php
+COPY docker/web/funciones.php /var/www/html/libreria/funciones.php
